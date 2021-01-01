@@ -32,7 +32,8 @@ function doGet(request) {
 } 
 ```
 3. Click "Publish -> Deploy as web app" and follow the workflow until you hit "Deploy" and gotten this dialog.
-1. Follow the link, it should display your sheet as an JSON
+![Deploy as web app](deploy-as-web-app.png)
+4. Follow the link, it should display your sheet as an JSON
 
 
 
@@ -44,7 +45,7 @@ If you consume JSON outside the browser, you are golden now - you can use the UR
 ```html
 <script src="https://script.google.com/macros/<your-id>/exec?prefix=alert"></script>
 ```
-2. Then you can this snippet, which calls the `writeTable()` function  (instead of the built-in `alert()` function) to populate the table from your JSON objects:
+2. Then you can use this snippet, which calls the `writeTable()` function instead of the built-in `alert()` function to populate the table from your JSON objects:
 ```html
 <table id="table"></table>
 
@@ -82,3 +83,4 @@ This is the basic setup, so you might need to do:
 - add styling
 - add code to access other sheets
 - add support for empty JSON documents
+- rename ID of table, especially if you want to populate multiple tables in a single HTML page
